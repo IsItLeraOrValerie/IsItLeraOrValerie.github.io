@@ -13,7 +13,9 @@
       <a id="logo-img" href="#">
         <img src="Media/CalendarLogoPlantWebsite.png" alt="Logo" />
       </a>
-      <ul>
+
+      <!-- for desktop -->
+      <ul class="nav-list">
         <li><a href="index.html">Home</a></li>
         <li><a href="calendar.html">Calendar</a></li>
         <li><a href="plant_info.html">Plant info</a></li>
@@ -21,7 +23,27 @@
         <!-- <li><a href="about.html">About</a></li> -->
         <li><a href="contact.html">Contact</a></li>
       </ul>
-    </nav>
+    
+
+    <!-- hamburger menu for mobile -->
+  <!-- <nav> -->
+        <input type="checkbox" id="menu-toggle">
+    <label for="menu-toggle" class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>  
+    </label>
+
+    <!-- This is the menue that will be displayed when clicking on it -->
+     <nav class="menu">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Calendar</a></li>
+            <li><a href="#">Item 1</a></li>
+            <li><a href="#">Item 1</a></li>
+        </ul>
+     </nav>
+  </nav>
 
 
 
@@ -35,36 +57,33 @@
 
     <!-- 2nd banner section -->
      <section class="calendar-banner">
-        <h2>Growing Calendar</h2>
         <img src="Media/placeholder.png" alt="Calendar Image" />
-        <p>
-            This calendar website will help you in your gardening journey!
-        </p>
+        <aside>
+          <h2>Growing Calendar</h2>
+          <p>
+              This calendar website will help you in your gardening journey!
+          </p>
+        </aside>
         <a href="calendar.html">To Calendar</a>
      </section>
     
     
      <!-- 3rd section - plant info -->
     <section class="plant-info">  
-    <h2>Plant Info</h2>
-    <section class="card-container">
-        <section class="card">
-            <!-- front of card 1 -->
-            <article class="card-front">
-                <img src="Media/tomatos.png" alt="">
-                <h3>Tomato</h3>
-                <p>
-                The tomato is a plant whose fruit is an edible berry that is eaten as
-                a vegetable. The tomato is a member of the nightshade family that
-                includes tobacco, potato, and chili peppers.
-                </p>
-                <a href="plant_info.html">Read more</a>
-            </article>
-            <!-- back of card 1 -->
-            <!-- <article class="card-back">
-                <h3>This is a test</h3>
-            </article> -->
-        </section>
+      <h2>Plant Info</h2>
+      <section class="card-container">
+
+        <article class="card">
+          <img src="Media/tomatos.png" alt="">
+          <h3>Tomato</h3>
+          <p>
+          The tomato is a plant whose fruit is an edible berry that is eaten as
+          a vegetable. The tomato is a member of the nightshade family that
+          includes tobacco, potato, and chili peppers.
+          </p>
+          <a href="plant_info.html">Read more</a>
+        </article>
+        
     
 
         <article class="card">
@@ -78,6 +97,7 @@
           </p>
           <a href="plant_info.html">Read more</a>
         </article>
+        
         <article class="card">
           <img src="Media/garlic.png" alt="">
           <h3>Garlic</h3>
@@ -88,8 +108,8 @@
           </p>
           <a href="plant_info.html">Read more</a>
         </article>
-      </section>
-    </section> <!-- end of card-container-->
+      </section> <!-- end of card-container-->
+      <a href="plant_info.html" class="more-info-plant">More Info</a>
     </section> <!-- end of plant-info-->
 
     <!-- guides section -->

@@ -4,36 +4,51 @@
   padding: 0;
 }
 
+#logo-img img{
+  /* background-color: red; */
+  width: 80px;
+}
+
+
+/* all images  */
 img{
-  width: 100px;
+  width: 200px;
 }
 
-ul {
-  list-style-type: none;
-}
-
-nav ul{
-  
+nav {
   display: grid;
-  /* grid-template-columns: auto auto auto auto auto auto; */
-  grid-auto-flow: column;
-  
-
+  grid-template-columns: auto 1fr;
 }
+
+nav ul {
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: center;  
+}
+
+
 nav ul li{
-  background-color: #8e9c62;
+  list-style: none;
+  /* background-color: #8e9c62;
   text-align: center;
   margin: 15px;
   width: 150px;
   line-height: 40px;
-  /* border-radius: 30%; */
+  border-radius: 30%; */
 }
 
 nav ul li a{
   text-decoration: none;
   color: #283618;
   display: block;
-  
+  width: 150px;
+  height: 40px;
+  margin: 20px;
+  text-decoration: none;
+  background-color: #8e9c62;
+  text-align: center;
+  align-content: center;
+  border-radius: 5px; 
 }
 
 nav ul li a:hover{
@@ -56,101 +71,143 @@ header h1{
 
 body {
   font-family: Arial, sans-serif;
-  width: 880px;
+  /* width: 880px;  */
   margin: auto;
   background-color: #fefae0;
 }
 
-#logo-img img{
-  /* background-color: red; */
-  width: 50px;
-}
+
 
 
 /* For Hamburger menue ======================================================= */
 
-/* add media query  */
-
-/* hide the checkboxes */
-#menu-toggle{
+.hamburger, .menu {
   display: none;
 }
 
-/* style the hamburger menu */
-.hamburger {
-  position: relative;
-  display: inline-block;
-  width: 30px;
-  height: 20px;
-  cursor: pointer;
+@media (max-width: 700px) {
+  .hamburger {
+    display: inline-block;
+  }
+
+  .menu {
+    display: block;
+  }
 }
 
-.hamburger span{
-  position: absolute;
-  left: 0;
-  right: 0;
-  height: 3px;
-  background-color: #8e9c62;
-}
+/* hide the checkboxes */
+  #menu-toggle{
+    display: none;
+    overflow: hidden;
+  }
 
-.hamburger span:nth-child(1)
-{
-  top: 0;
-}
+/* add media query  */
+@media (max-width: 700px) {
 
-.hamburger span:nth-child(2)
-{
-  top: 9px;
-}
-
-.hamburger span:nth-child(3)
-{
-  bottom: 0;
+nav ul.nav-list {
+    display: none;
 }
 
 
-.menu {
-  position: absolute;
-  top: 0;
-  right: -300px;
-  width: -300px;
-  height: 100%;
-  background-color: #83552d;
-  color: #8e9c62;
-}
+  /* style the hamburger menu */
+  .hamburger {
+    top: 20px;
+    right: 20px;
+    /* position: relative; */
+    position: absolute;
+    display: inline-block;
+    width: 30px;
+    height: 20px;
+    cursor: pointer;
+    z-index: 1100; /* make the 3 lines above everything so user can toggle it*/ 
+  }
 
-.menu ul{
-  list-style-type: none;
-  padding: 0; 
-  margin: 0;
-}
+  .hamburger span{
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background-color: #8e9c62;
+  }
 
-.menu ul li{
-  padding: 10px;
-}
+  .hamburger span:nth-child(1)
+  {
+    top: 0;
+  }
 
-.menu ul li a{
-  color: #fefae0;
-  text-decoration: none;
-}
+  .hamburger span:nth-child(2)
+  {
+    top: 9px;
+  }
 
-#menu-toggle:checked ~ .menu {
-  left: 0%;
+  .hamburger span:nth-child(3)
+  {
+    bottom: 0;
+  }
+
+
+  .menu {
+    position: fixed;
+    top: 0;
+    right: -300px;
+    width: 300px;
+    height: 100%;
+    background-color: #83552d;
+    color: #8e9c62;
+  }
+
+  .menu ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style-type: none;
+    padding: 0; 
+    margin: 0;
+  }
+
+  .menu ul li{
+    padding: 10px;
+  }
+
+  .menu ul li a{
+    color: #084e0c;
+    text-decoration: none;
+  }
+
+  #menu-toggle:checked ~ .menu {
+    right: 0%;
+  }
 }
 
 
 
 /* End of Hamburger menue ======================================================= */
+
+
 .plant-info {
   background-color: rgb(92, 164, 90);
   text-align: center;
 }
 
-
 .card-container {
-  
   display: grid;
+  align-content: center;
+  justify-content: space-around; 
   grid-template-columns: auto auto auto;
+}
+
+.plant-info .more-info-plant{
+  display: inline-block;
+  background-color: red;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin: 20px;
+
+}
+
+.more-info-plant{
+  text-align: center; /* centers inline-block elements like <a> */
 }
 
 .card {
