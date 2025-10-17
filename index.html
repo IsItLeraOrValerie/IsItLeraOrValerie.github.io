@@ -2,11 +2,12 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
     <link rel="stylesheet" href="css/styles.css" />
     <title>Home page</title>
   </head>
   <body>
+    <!-- header section -->
     <nav>
       <!-- Logo -->
       <a id="logo-img" href="#">
@@ -16,18 +17,24 @@
         <li><a href="index.html">Home</a></li>
         <li><a href="calendar.html">Calendar</a></li>
         <li><a href="plant_info.html">Plant info</a></li>
-        <li><a href="guides.html">Guides</a></li>
-        <li><a href="about.html">About</a></li>
+        <!-- <li><a href="guides.html">Guides</a></li> -->
+        <!-- <li><a href="about.html">About</a></li> -->
         <li><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
+
+
+
+    <!-- hero banner picture  -->
     <header>
-      <!-- hero banner picture  -->
       <h1>The Gardening Calendar Website!</h1>
       <p>Growing times, tips and trics!</p>
     </header>
     
-     <section>
+
+
+    <!-- 2nd banner section -->
+     <section class="calendar-banner">
         <h2>Growing Calendar</h2>
         <img src="Media/placeholder.png" alt="Calendar Image" />
         <p>
@@ -36,6 +43,9 @@
         <a href="calendar.html">To Calendar</a>
      </section>
     
+    
+     <!-- 3rd section - plant info -->
+    <section class="plant-info">  
     <h2>Plant Info</h2>
     <section class="card-container">
         <section class="card">
@@ -51,36 +61,38 @@
                 <a href="plant_info.html">Read more</a>
             </article>
             <!-- back of card 1 -->
-            <article class="card-back">
+            <!-- <article class="card-back">
                 <h3>This is a test</h3>
-            </article>
+            </article> -->
         </section>
-    </section>
+    
 
-      <article class="card">
-        <img src="Media/potatos.png" alt="">
-        <h3>Potato</h3>
-        <p>
-          The potato is a starchy tuberous vegetable native to the Americas that
-          is consumed as a staple food in many parts of the world. Potatoes are
-          underground stem tubers of the plant Solanum tuberosum, a perennial in
-          the nightshade family Solanaceae.
-        </p>
-        <a href="plant_info.html">Read more</a>
-      </article>
-      <article class="card">
-        <img src="Media/garlic.png" alt="">
-        <h3>Garlic</h3>
-        <p>
-          Garlic is a species of bulbous flowering plants in the genus Allium.
-          Its close relatives include the onion, shallot, leek, chives, Welsh
-          onion, and Chinese onion.
-        </p>
-        <a href="plant_info.html">Read more</a>
-      </article>
-    </section>
+        <article class="card">
+          <img src="Media/potatos.png" alt="">
+          <h3>Potato</h3>
+          <p>
+            The potato is a starchy tuberous vegetable native to the Americas that
+            is consumed as a staple food in many parts of the world. Potatoes are
+            underground stem tubers of the plant Solanum tuberosum, a perennial in
+            the nightshade family Solanaceae.
+          </p>
+          <a href="plant_info.html">Read more</a>
+        </article>
+        <article class="card">
+          <img src="Media/garlic.png" alt="">
+          <h3>Garlic</h3>
+          <p>
+            Garlic is a species of bulbous flowering plants in the genus Allium.
+            Its close relatives include the onion, shallot, leek, chives, Welsh
+            onion, and Chinese onion.
+          </p>
+          <a href="plant_info.html">Read more</a>
+        </article>
+      </section>
+    </section> <!-- end of card-container-->
+    </section> <!-- end of plant-info-->
 
-    <!-- guides section with 5 articales about growing plants from seed till harvest   -->
+    <!-- guides section -->
      <section >
         <h2>Guides</h2>
         <article>
@@ -130,7 +142,23 @@
         </article>
      </section>
 
-    <footer>
+     <!-- Footer -->
+    <footer class="footer">
+      <section>
+        <h3>CalendarWebsite</h3>
+        <p>Something about the website Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla voluptatum ut minus excepturi illo dolores iusto tempore, eius fugit, facilis soluta officia in officiis vero similique cumque vitae nobis eveniet.</p>
+      </section>
+
+      <section>
+        <h3>Quick links</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="plant_info.html">Plant info</a></li>
+          <li><a href="contact.html">Contact us!</a></li>
+        </ul>
+      </section>
       <p>&copy; 2024 Gardening Website. All rights reserved.</p>
+    </footer>
+
   </body>
 </html>
