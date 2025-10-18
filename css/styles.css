@@ -1,7 +1,24 @@
+:root {
+    --light-yellow-background: #ece6bf; 
+    --olive-green: #8e9c62;
+    --dark-green: #283618;
+    --light-green-hover: #c3cea1;
+    --solid-green: #408a52;
+
+}
+
+
 * {
   border: 0;
   margin: 0;
   padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  /* width: 880px;  */
+  margin: auto;
+  background-color: var(--light-yellow-background);
 }
 
 #logo-img img{
@@ -16,9 +33,13 @@ img{
 }
 
 nav {
+  position: sticky; /* to keep nav bottons stay at the top */
+  top: 0;
+  background-color: var(--light-yellow-background);
   display: grid;
   grid-template-columns: auto 1fr;
 }
+
 
 nav ul {
   display: grid;
@@ -39,60 +60,55 @@ nav ul li{
 
 nav ul li a{
   text-decoration: none;
-  color: #283618;
+  color: var(--dark-green);
   display: block;
   width: 150px;
   height: 40px;
   margin: 20px;
   text-decoration: none;
-  background-color: #8e9c62;
+  background-color: var(--olive-green);
   text-align: center;
   align-content: center;
   border-radius: 5px; 
+   /* background-color: red; */
+
 }
 
 nav ul li a:hover{
-  color: #d7ea97;
+  color: var(--light-green-hover);
 }
 
 
-header{
-  display: grid;
-  align-content: end;
-  height: 400px;
-  background-color: rgb(64, 138, 82);
-  padding: 40px;  
+/*  Hero banner ============================================================================== */
+
+.hero-banner{
+  height: 600px;
 }
 
-header h1{
-  padding-bottom : 20px;
+.hero-banner img{
+  /* position: absolute; */
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.hero-banner-title{
+  position: absolute;
+  height: 100px;
+  left: 50px;
+  bottom: 200px;
+  background-color: rgba(64,138,82,80%); /* For transperent card */
+  /* background-color: var(--solid-green); */
+  color: var(--light-yellow-background);
+  padding: 16px 20px;
+  border-radius: 8px;
 }
 
 
-body {
-  font-family: Arial, sans-serif;
-  /* width: 880px;  */
-  margin: auto;
-  background-color: #fefae0;
-}
-
-
-
-
-/* For Hamburger menue ======================================================= */
+/* For Hamburger menue ============================================================================== */
 
 .hamburger, .menu {
   display: none;
-}
-
-@media (max-width: 700px) {
-  .hamburger {
-    display: inline-block;
-  }
-
-  .menu {
-    display: block;
-  }
 }
 
 /* hide the checkboxes */
@@ -101,25 +117,25 @@ body {
     overflow: hidden;
   }
 
+
+
 /* add media query  */
-@media (max-width: 700px) {
+@media (max-width: 768px) {
 
-nav ul.nav-list {
-    display: none;
-}
-
+  nav ul.nav-list {
+      display: none;
+  }
 
   /* style the hamburger menu */
   .hamburger {
+    position: fixed; 
     top: 20px;
     right: 20px;
-    /* position: relative; */
-    position: absolute;
     display: inline-block;
     width: 30px;
     height: 20px;
     cursor: pointer;
-    z-index: 1100; /* make the 3 lines above everything so user can toggle it*/ 
+    z-index: 2100; /* make the 3 lines above everything so user can toggle it*/ 
   }
 
   .hamburger span{
@@ -147,6 +163,7 @@ nav ul.nav-list {
 
 
   .menu {
+    display: block;
     position: fixed;
     top: 0;
     right: -300px;
@@ -181,11 +198,11 @@ nav ul.nav-list {
 
 
 
-/* End of Hamburger menue ======================================================= */
+/* plant info cards ============================================================================== */
 
 
 .plant-info {
-  background-color: rgb(92, 164, 90);
+  background-color: var(--solid-green);
   text-align: center;
 }
 
@@ -198,11 +215,16 @@ nav ul.nav-list {
 
 .plant-info .more-info-plant{
   display: inline-block;
-  background-color: red;
+  background-color: var(--light-green-hover);
+  color: var(--dark-green);
   text-decoration: none;
   padding: 10px 20px;
   border-radius: 5px;
   margin: 20px;
+}
+.plant-info .more-info-plant:hover{
+  color: var(--olive-green);
+  border: 3px solid var(--dark-green);
 
 }
 
@@ -212,14 +234,35 @@ nav ul.nav-list {
 
 .card {
   text-align: left;
-  background-color: #c3cea1;
+  background-color: var(--light-green-hover);
   margin: 30px;
   padding: 10px;
-  width: 200px;
+  height: 20rem;
+  border-radius: 5%;
+  border: 3px solid var(--dark-green);
+}
+
+.card img {
+  border: 3px solid var(--dark-green);
 }
 
 
-/* Footer */
+/* media query - plant info ============================== */
+@media (max-width: 768px) {
+  .card-container {
+    display: grid;
+    grid-template-columns: auto;
+    align-content: center;
+    justify-content: space-around; 
+  }
+
+}
+
+
+
+
+/* Footer ============================================================================== */
+
 .footer {
   background-color: red;
   padding: 30px;

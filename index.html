@@ -3,61 +3,83 @@
   <head>
     <meta charset="UTF-8" />
     <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
-    <link rel="stylesheet" href="css/styles.css" />
+    <link type ="text/css" rel="stylesheet" href="css/styles.css" />
+
     <title>Home page</title>
   </head>
   <body>
+
     <!-- header section -->
-    <nav>
-      <!-- Logo -->
-      <a id="logo-img" href="#">
-        <img src="Media/CalendarLogoPlantWebsite.png" alt="Logo" />
-      </a>
+    <header>
+      <nav>
+        <!-- Logo -->
+        <a id="logo-img" href="#">
+          <img src="Media/CalendarLogoPlantWebsite.png" alt="Logo" />
+        </a>
 
-      <!-- for desktop -->
-      <ul class="nav-list">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="calendar.html">Calendar</a></li>
-        <li><a href="plant_info.html">Plant info</a></li>
-        <!-- <li><a href="guides.html">Guides</a></li> -->
-        <!-- <li><a href="about.html">About</a></li> -->
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    
-
-    <!-- hamburger menu for mobile -->
-  <!-- <nav> -->
-        <input type="checkbox" id="menu-toggle">
-    <label for="menu-toggle" class="hamburger">
-        <span></span>
-        <span></span>
-        <span></span>  
-    </label>
-
-    <!-- This is the menue that will be displayed when clicking on it -->
-     <nav class="menu">
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Calendar</a></li>
-            <li><a href="#">Item 1</a></li>
-            <li><a href="#">Item 1</a></li>
+        <!-- for desktop -->
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="calendar.html">Calendar</a></li>
+          <li><a href="plant_info.html">Plant info</a></li>
+          <!-- <li><a href="guides.html">Guides</a></li> -->
+          <!-- <li><a href="about.html">About</a></li> -->
+          <li><a href="contact.html">Contact</a></li>
         </ul>
-     </nav>
-  </nav>
+      
+
+        <!-- hamburger menu for mobile -->
+        <!-- <nav> -->
+          <input type="checkbox" id="menu-toggle">
+          <label for="menu-toggle" class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>  
+          </label>
+
+        <!-- This is the menue that will be displayed when clicking on it -->
+        <nav class="menu">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Calendar</a></li>
+                <li><a href="#">Item 1</a></li>
+                <li><a href="#">Item 1</a></li>
+            </ul>
+        </nav>
+      </nav>
+    </header>
 
 
 
     <!-- hero banner picture  -->
-    <header>
-      <h1>The Gardening Calendar Website!</h1>
-      <p>Growing times, tips and trics!</p>
-    </header>
+    <section class="hero-banner">
+      <img src="Media/garden-picture-enterance.png" alt="image of plants"/>
+      <section class="hero-banner-title">
+        <h1>The Gardening Calendar Website!</h1>
+        <p>Growing times, tips and trics!</p>
+      </section>
+    </section>
     
 
 
     <!-- 2nd banner section -->
      <section class="calendar-banner">
-        <img src="Media/placeholder.png" alt="Calendar Image" />
+        <img src="Media/calendar-veg2.png" alt="image of the vegtable Calendar "/>
+
+        <!-- table for plants -->
+          <table>
+            <tr>
+              <th>title1</th>
+              <th>title1</th>
+              <th>title1</th>
+            </tr>
+            <tr>
+              <td>text</td>
+              <td>text</td>
+              <td>text</td>
+            </tr>
+          </table>
+
         <aside>
           <h2>Growing Calendar</h2>
           <p>
@@ -74,7 +96,7 @@
       <section class="card-container">
 
         <article class="card">
-          <img src="Media/tomatos.png" alt="">
+          <img src="Media/tomatos.png" alt="tomatoes in the garden">
           <h3>Tomato</h3>
           <p>
           The tomato is a plant whose fruit is an edible berry that is eaten as
@@ -83,11 +105,12 @@
           </p>
           <a href="plant_info.html">Read more</a>
         </article>
+
         
     
 
         <article class="card">
-          <img src="Media/potatos.png" alt="">
+          <img src="Media/potatos.png" alt="potatos in the garden">
           <h3>Potato</h3>
           <p>
             The potato is a starchy tuberous vegetable native to the Americas that
@@ -99,7 +122,7 @@
         </article>
         
         <article class="card">
-          <img src="Media/garlic.png" alt="">
+          <img src="Media/garlic.png" alt="garlic in the garden">
           <h3>Garlic</h3>
           <p>
             Garlic is a species of bulbous flowering plants in the genus Allium.
@@ -115,8 +138,8 @@
     <!-- guides section -->
      <section >
         <h2>Guides</h2>
-        <article>
-            <img src="" alt="">
+        <article class="guide-card">
+            <img src="Media/placeholder.png" alt="picture of vegtable seeds">
             <h3>Seed starting and Germination</h3>
             <p>
             This guide provides step-by-step instructions on how to grow your own
@@ -124,8 +147,8 @@
             </p>
             <a href="guides.html">Read more</a>
         </article>
-        <article >
-            <img src="" alt="">
+        <article class="guide-card" >
+            <img src="Media/placeholder.png" alt="picture of young plants">
             <h3>Caring for young plants </h3>
             <p>
             Learn the best practices for planting, watering, and caring for your
@@ -133,8 +156,8 @@
             </p>
             <a href="guides.html">Read more</a>
         </article>
-        <article>
-            <img src="" alt="">
+        <article class="guide-card">
+            <img src="Media/placeholder.png" alt="picture of dead leavs on a plant">
             <h3>Common challenges</h3>
             <p>
             Discover tips and tricks for dealing with common gardening challenges
@@ -142,7 +165,7 @@
             </p>
             <a href="guides.html">Read more</a>
         </article>
-        <article>
+        <!-- <article>
             <img src="" alt="">
             <h3>Gardening techniques</h3>
             <p>
@@ -159,7 +182,7 @@
             flavor.
             </p>
             <a href="guides.html">Read more</a>
-        </article>
+        </article> -->
      </section>
 
      <!-- Footer -->
