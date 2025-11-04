@@ -26,9 +26,6 @@
         <ul class="nav-list">
           <li><a href="index.html">Home</a></li>
           <li><a href="calendar.html">Calendar</a></li>
-          <!-- <li><a href="plant_info.html">Plant info</a></li> -->
-          <!-- <li><a href="guides.html">Guides</a></li> -->
-          <!-- <li><a href="about.html">About</a></li> -->
           <li><a href="contact.html">Contact</a></li>
         </ul>
       </nav>
@@ -46,8 +43,7 @@
         <nav class="menu">
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="contact.html">Calendar</a></li>
-                <!-- <li><a href="plant_info.html">Plant info</a></li> -->
+                <li><a href="calendar.html">Calendar</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
       </nav>
@@ -55,37 +51,57 @@
     <!-- end of header section ================================================ -->
 
     <legend>
-        <section>
+        <section id="contact-page">
         <h1>Contact</h1>
             <form action="https://witan.nl/inholland/html/testform2223.php">
-                <label for="first-name">Name: *</label>
-                <input type="text">
-                <label for="email">Email Address: *</label>
-                <input type="email">
 
-                <label for="expiriance">Gardening Expiriance:</label>
-                <select id="expiriance" name="expiriance">
-                <option value="Begginer">Begginer</option>
-                <option value="somewhat-expiriance">Somewhat Expirianced</option>
-                <option value="expirianced">Expirianced</option>
-                </select>
+                <section id="contact-form-left">
+                    <section id="contact-name">
+                        <label for="first-name">Name: *</label>
+                        <input type="text">
+                    </section>
 
-                <label for="Location">Location /Zone:</label>
-                <select id="Location" name="Location">
-                <option value="europe">Europe</option>
-                <option value="America">America</option>
-                <option value="Austrelia">Austrelia</option>
-                <option value="Africa">Africa</option>
-                <option value="Asia">Asia</option>
-                </select>
+                    <section id="contact-expiriance">
+                        <label for="expiriance">Gardening Expiriance:</label>
+                        <select id="expiriance" name="expiriance">
+                        <option value="Begginer">Begginer</option>
+                        <option value="somewhat-expiriance">Somewhat Expirianced</option>
+                        <option value="expirianced">Expirianced</option>
+                        </select>
+                    </section>
+                </section>
 
-                <label for="title">Title: *</label>
-                <input type="text">
+                <section id="contact-form-right">
+                    <section id="contact-email">
+                        <label for="email">Email Address: *</label>
+                        <input type="email">
+                    </section>
 
-                <label for="message">Content:</label>
-                <input type="text">
+                    <section id="contact-location">
+                        <label for="Location">Location /Zone:</label>
+                        <select id="Location" name="Location">
+                        <option value="europe">Europe</option>
+                        <option value="America">America</option>
+                        <option value="Austrelia">Austrelia</option>
+                        <option value="Africa">Africa</option>
+                        <option value="Asia">Asia</option>
+                        </select>
+                    </section>
+                </section>
 
-                <input type="submit">
+                <section id="contact-title">
+                    <label for="title">Title: *</label>
+                    <input type="text">
+                </section>
+
+                <section id="contact-content">
+                    <label for="message">Content:</label>
+                    <input type="text">
+                </section>
+
+                <section id="contact-submit">
+                    <input type="submit">
+                </section>
             </form>
         </section>
     </legend>
