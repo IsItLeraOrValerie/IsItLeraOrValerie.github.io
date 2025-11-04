@@ -1,14 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- css and icons  -->
     <link type ="text/css" rel="stylesheet" href="css/styles.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+    <link rel="icon" href="img/CalendarLogoPlantWebsite.png" type="image/x-icon">
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+    </style>
+
     <title>Home page</title>
   </head>
+
   <body>
 
     <!-- header section ================================================ -->
@@ -23,7 +28,7 @@
         <ul class="nav-list">
           <li><a href="index.html">Home</a></li>
           <li><a href="calendar.html">Calendar</a></li>
-          <li><a href="plant_info.html">Plant info</a></li>
+          <!-- <li><a href="plant_info.html">Plant info</a></li> -->
           <!-- <li><a href="guides.html">Guides</a></li> -->
           <!-- <li><a href="about.html">About</a></li> -->
           <li><a href="contact.html">Contact</a></li>
@@ -44,7 +49,7 @@
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="contact.html">Calendar</a></li>
-                <li><a href="plant_info.html">Plant info</a></li>
+                <!-- <li><a href="plant_info.html">Plant info</a></li> -->
                 <li><a href="contact.html">Contact</a></li>
             </ul>
       </nav>
@@ -61,25 +66,35 @@
       </section>
     </figure>
     
+    <!-- about =================================================================== -->
+     <section class="about-banner">
+      <h1>About</h1>
 
-    <!-- 2nd banner section -->
+        <section id="about-title">
+          <img src="img/about-pic1.png" alt="">
+          <h3>Welcome to The Gardening Calendar,</h3>
+          <p>your companion for planning and growing a thriving garden all year round!</p>
+        </section>
+
+        <section id="about-middle">
+          
+          <p>Here, you&lsquo;ll find easy-to-follow guides, planting calendars, and growing tips tailored to your local seasons. 
+          Whether you&lsquo;re just starting out or already have a green thumb, our tools and advice help you know what to plant, when to harvest, and how to care for your plants at every stage.</p>
+          <img src="img/about-pic2.png" alt="">
+        </section>
+        
+        <section id="about-last">
+          <img src="img/about-pic3.png" alt="">
+          <p>Explore, learn, and let your garden grow with confidence!
+Want to learn more about how this site works? Visit our About page to see how we can help you plan your perfect garden.</p>
+          
+        </section>
+
+     </section>
+
+    <!-- calendar  =========================================================== -->
      <section class="calendar-banner">
         <img src="img/calendar-veg2.png" alt="image of the vegtable Calendar "/>
-
-        <!-- table for plants -->
-          <table>
-            <tr>
-              <th>title1</th>
-              <th>title1</th>
-              <th>title1</th>
-            </tr>
-            <tr>
-              <td>text</td>
-              <td>text</td>
-              <td>text</td>
-            </tr>
-          </table>
-
         <aside>
           <h2>Growing Calendar</h2>
           <p>
@@ -90,7 +105,7 @@
      </section>
     
     
-     <!-- 3rd section - plant info -->
+     <!-- plant info ================================================ -->
     <section class="plant-info">  
       <h2>Plant Info</h2>
       <section class="card-container">
@@ -135,7 +150,7 @@
       <a href="plant_info.html" class="more-info-plant">More Info</a>
     </section> <!-- end of plant-info-->
 
-    <!-- guides section -->
+    <!-- guides section ==================================================== -->
      <section >
         <h2>Guides</h2>
         <article class="guide-card">
@@ -185,7 +200,7 @@
         </article> -->
      </section>
 
-     <!-- Footer -->
+     <!-- Footer ====================================================== -->
     <footer class="footer">
       <section id="footer-info">
         <h3>CalendarWebsite</h3>

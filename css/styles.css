@@ -14,8 +14,9 @@
 }
 
 body {
-
-  font-family: Courgette, Arial, sans-serif;
+  font-family: "Courgette", Arial, sans-serif;
+  letter-spacing: 1px;
+  word-spacing: 1px;
   /* width: 880px;  */
   margin: auto;
   background-color: var(--light-yellow-background);
@@ -193,6 +194,61 @@ nav ul li a:hover{
   border-radius: 8px;
   z-index: 10;
 }
+/* about ================================================================================= */
+
+.about-banner{
+  background-color: var(--dark-green);
+  text-indent: 1em;
+  color: var(--light-yellow-background);
+}
+
+.about-banner h1 {
+  text-align: center;
+  padding: 30px;
+}
+
+.about-banner section{
+  padding-left: 70px;
+  padding-right: 70px;
+  padding-bottom: 30px;
+}
+
+.about-banner img{
+  height: 180px;
+  width: 150px;
+  border-radius: 20%;
+  border: 3px, solid, var(--light-green-hover);
+}
+
+#about-title{
+  display: grid;
+  grid-template-columns: 20% 1fr;
+}
+
+#about-title h3, #about-title p {
+  grid-column: 2;
+  font-size: 30px;
+}
+
+#about-title img {
+  grid-column: 1;
+  grid-row: 1 / 3;
+}
+
+#about-middle {
+  display: grid;
+  grid-template-columns: 80% 1fr;
+  font-size: 30px;
+}
+
+#about-last {
+  display: grid;
+  grid-template-columns: 20% 1fr;
+  font-size: 30px;
+}
+
+
+
 
 
 /* plant info cards ============================================================================== */
@@ -205,6 +261,7 @@ nav ul li a:hover{
 
 .plant-info h2 {
   color: #B8DB71;
+  text-transform: uppercase;
 }
 
 .card-container {
@@ -239,6 +296,7 @@ nav ul li a:hover{
   padding: 10px;
   height: 20rem;
   width: 20em;
+  line-height: 2em;
   border-radius: 5%;
   border: 3px solid var(--dark-green);
   overflow: hidden; /* so that text dont go outside the box */
@@ -267,6 +325,10 @@ nav ul li a:hover{
   }
 
 }
+
+
+
+
 
 
 

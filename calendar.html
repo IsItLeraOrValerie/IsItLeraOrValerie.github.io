@@ -2,11 +2,75 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link type ="text/css" rel="stylesheet" href="css/styles.css" />
+    <link rel="icon" href="img/CalendarLogoPlantWebsite.png" type="image/x-icon">
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+    </style>
+    
+    <title>Calendar</title>
 </head>
 <body>
+    <!-- header section ================================================ -->
+    <header>
+      <nav>
+        <!-- Logo -->
+        <a id="logo-img" href="#">
+          <img src="img/CalendarLogoPlantWebsite.png" alt="Logo" />
+        </a>
+
+        <!-- for desktop -->
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="calendar.html">Calendar</a></li>
+          <!-- <li><a href="plant_info.html">Plant info</a></li> -->
+          <!-- <li><a href="guides.html">Guides</a></li> -->
+          <!-- <li><a href="about.html">About</a></li> -->
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- hamburger menu for mobile -->
+        <!-- <nav> -->
+          <input type="checkbox" id="menu-toggle">
+          <label for="menu-toggle" class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>  
+          </label>
+
+          <!-- This is the menue that will be displayed when clicking on it -->
+        <nav class="menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="contact.html">Calendar</a></li>
+                <!-- <li><a href="plant_info.html">Plant info</a></li> -->
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+      </nav>
+    </header>
+    <!-- end of header section ================================================ -->
+
+
+
     <h1>This is the calendar page</h1>
+
+    <!-- table for plants -->
+          <table>
+            <tr>
+              <th>title1</th>
+              <th>title1</th>
+              <th>title1</th>
+            </tr>
+            <tr>
+              <td>text</td>
+              <td>text</td>
+              <td>text</td>
+            </tr>
+          </table>
+
+
+
     
 </body>
 </html>
