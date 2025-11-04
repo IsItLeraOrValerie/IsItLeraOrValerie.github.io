@@ -22,6 +22,10 @@ body {
   background-color: var(--light-yellow-background);
 }
 
+a:link{
+  color: var(--dark-green);
+}
+
 #logo-img img{
   /* background-color: red; */
   width: 80px;
@@ -247,6 +251,71 @@ nav ul li a:hover{
   font-size: 30px;
 }
 
+/* calendar ================================================================ */
+
+
+.calendar-banner {
+  padding: 50px;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 50% 1fr;
+}
+
+.calendar-banner p, h2 {
+  color: var(--dark-green);
+}
+
+.calendar-banner p {
+  margin: 20px 0px;
+}
+
+
+
+
+.calendar-banner a {
+  grid-column: 2;
+  text-decoration: none;
+  background-color: var(--dark-green);
+  color: var(--light-yellow-background);
+  width: 100px;
+  height: 30px;
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 100px;
+  margin-left: 70%;
+}
+
+.calendar-banner a:hover {
+  color: var(--olive-green);
+}
+
+.calendar-banner img {
+  height: 90%;
+  width: 90%;
+  grid-row: 1/3;
+}
+
+@media (max-width: 768px) {
+  .calendar-banner {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    align-content: center;
+    justify-content: space-around; 
+  }
+
+  .calendar-banner img {
+    grid-row: 2;
+  }
+
+  .calendar-banner a {
+    margin-left: 40%;
+    align-content: center;
+    grid-column: 1;
+    grid-row: 3;
+  }
+
+}
 
 
 
@@ -327,8 +396,127 @@ nav ul li a:hover{
 }
 
 
+/* guides ============================================================================ */
+
+#guides-banner{
+  margin: 30px;
+  /* background-color: red; */
+}
+
+#guides-banner h2{
+  font-size: 40px;
+  text-align: center;
+}
+
+#guides-banner .guide-card {
+  color: var(--dark-green);
+  margin: 30px;
+  display: grid;
+  grid-template-columns: 20% auto;
+}
+
+#guides-banner h3 {
+  font-size: 30px;
+}
+
+#guides-banner p {
+  margin-top: 20px;
+  font-size: 25px;
+}
+
+#guides-banner a {
+  text-decoration: none;
+  color: var(--dark-green);
+  font-size: 25px;
+}
 
 
+
+#guides-banner img {
+  height: 250px;
+  width: 200px;
+  border-radius: 20%;
+  border: 3px solid var(--dark-green);
+  /* width: 30%; */
+  grid-row: 1/3;
+}
+
+#guides-banner aside{
+  grid-row: 1;
+  grid-column: 2;
+  
+}
+
+
+
+
+
+
+
+/* calendar page ============================================================================ */
+
+
+#calendar-page-hero {
+  text-align: center;
+  background-color: var(--dark-green);
+  color: var(--light-yellow-background);
+  padding: 30px;
+  height: 200px;
+}
+
+#calendar-page-hero p {
+  padding: 30px;
+  font-size: 20px;
+}
+
+
+
+
+#calendar-page-table-legend section{
+  color: var(--dark-green);
+  padding: 3em;
+  display: grid;
+  grid-template-columns: 20% 1fr;
+}
+
+#calendar-page-table-legend section h1 p {
+  grid-column: 2;
+}
+
+#calendar-page-table-legend p {
+  font-size: 25px;
+}
+
+#calendar-page-table-legend section img{
+  grid-row: 1 / 3;
+  height: 200px;
+  width: 200px;
+  border-radius: 20%;
+  border: 3px solid var(--dark-green);
+}
+
+
+#calendar-table {
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+#calendar-table table {
+  border-collapse: collapse;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+  background-color: var(--light-green-hover);
+  color: var(--dark-green);
+}
+
+#calendar-table th, td{
+  border: 3px solid var(--light-yellow-background);
+  width: 50em;
+  height: 5em;
+  overflow: hidden;
+}
 
 
 
@@ -361,9 +549,20 @@ nav ul li a:hover{
 }
 
 .footer section ul li a {
-  background-color: red;
+  color: var(--light-green-hover);
+  /* background-color: red; */
   text-decoration: none;
   
+}
+
+@media (max-width: 768px) {
+  #footer-info{
+    display: none;
+  } 
+
+  .footer{
+    grid-template-columns: 1fr  1fr;
+  }
 }
 
 
