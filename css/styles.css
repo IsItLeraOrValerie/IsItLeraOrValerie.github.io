@@ -218,7 +218,7 @@ nav ul li a:hover{
   height: 180px;
   width: 150px;
   border-radius: 20%;
-  border: 3px, solid, var(--light-green-hover);
+  border: 3px solid var(--light-green-hover);
 }
 
 #about-title{
@@ -538,7 +538,7 @@ tr:nth-child(odd){
 
 /* Contact page ========================================================================= */
 
-#contact-page h1 {
+legend {
   text-align: center;
   color: var(--dark-green);
   font-size: 40px;

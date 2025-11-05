@@ -5,9 +5,9 @@
     <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
      <link type ="text/css" rel="stylesheet" href="css/styles.css" />
     <link rel="icon" href="img/CalendarLogoPlantWebsite.png" type="image/x-icon">
-    <style>
-    @import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
-    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
 
     <title>Contact</title>
 </head>
@@ -18,8 +18,8 @@
     <header>
       <nav>
         <!-- Logo -->
-        <a id="logo-img" href="#">
-          <img src="img/CalendarLogoPlantWebsite.png" alt="Logo" />
+        <a id="logo-img" href="index.html">
+          <img src="img/CalendarLogoPlantWebsite.png" alt="Logo" title="logo of green calendar" />
         </a>
 
         <!-- for desktop -->
@@ -50,43 +50,35 @@
     </header>
     <!-- end of header section ================================================ -->
 
-    <legend>
+    <fieldset>
+    <legend>contact us</legend>
         <section id="contact-page">
-        <h1>Contact</h1>
             <form action="https://witan.nl/inholland/html/testform2223.php">
 
                 <section id="contact-form-left">
-                    <section id="contact-name">
-                        <label for="first-name">Name: *</label>
-                        <input type="text">
-                    </section>
+                  <label for="first-name">Name: *</label>
+                  <input type="text">
 
-                    <section id="contact-expiriance">
-                        <label for="expiriance">Gardening Expiriance:</label>
-                        <select id="expiriance" name="expiriance">
-                        <option value="Begginer">Begginer</option>
-                        <option value="somewhat-expiriance">Somewhat Expirianced</option>
-                        <option value="expirianced">Expirianced</option>
-                        </select>
-                    </section>
+                  <label for="expiriance">Gardening Expiriance:</label>
+                  <select id="expiriance" name="expiriance">
+                  <option value="Begginer">Begginer</option>
+                  <option value="somewhat-expiriance">Somewhat Expirianced</option>
+                  <option value="expirianced">Expirianced</option>
+                  </select>
                 </section>
 
                 <section id="contact-form-right">
-                    <section id="contact-email">
-                        <label for="email">Email Address: *</label>
-                        <input type="email">
-                    </section>
+                  <label for="email">Email Address: *</label>
+                  <input type="email">
 
-                    <section id="contact-location">
-                        <label for="Location">Location /Zone:</label>
-                        <select id="Location" name="Location">
-                        <option value="europe">Europe</option>
-                        <option value="America">America</option>
-                        <option value="Austrelia">Austrelia</option>
-                        <option value="Africa">Africa</option>
-                        <option value="Asia">Asia</option>
-                        </select>
-                    </section>
+                  <label for="Location">Location /Zone:</label>
+                  <select id="Location" name="Location">
+                  <option value="europe">Europe</option>
+                  <option value="America">America</option>
+                  <option value="Austrelia">Austrelia</option>
+                  <option value="Africa">Africa</option>
+                  <option value="Asia">Asia</option>
+                  </select>
                 </section>
 
                 <section id="contact-title">
@@ -104,7 +96,7 @@
                 </section>
             </form>
         </section>
-    </legend>
+    </fieldset>
 
 
     <!-- Footer ====================================================== -->
