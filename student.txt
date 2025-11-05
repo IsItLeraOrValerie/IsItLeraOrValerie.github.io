@@ -1,0 +1,5 @@
+Student name: Lera (Valerie) Shorin
+Student number: 742304
+Student class: 1B
+GitHub Repository: https://github.com/IsItLeraOrValerie/IsItLeraOrValerie.github.io
+GitHub Pages URL: https://isitleraorvalerie.github.io/
